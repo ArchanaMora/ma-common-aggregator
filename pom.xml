@@ -28,14 +28,14 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-	<modules>
+	<!-- <modules>
 		<module>../ma-framework-jar</module>
 		<module>../ma-persistence-jar</module>
-		<!-- <module>../ma-stellent-jar</module>
+		 <module>../ma-stellent-jar</module>
 		<module>../ma-faxandmail-jar</module>
 		<module>../ma-eligibility-jar</module>
-		<module>../ma-userloginservice-jar</module> --> 
-	</modules>
+		<module>../ma-userloginservice-jar</module> 
+	</modules> -->
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
