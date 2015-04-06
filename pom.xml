@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.wellpoint.enterprise.build</groupId>
+		<artifactId>enterprise-pom</artifactId>
+		<version>3.0.0</version>
+	</parent>
+	<groupId>com.wellpoint.mobile.ma.common</groupId>
+	<artifactId>ma-common-aggregator</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>MA Commons Aggregator</name>
+	<description>MA Commons Aggregator</description>
+	<properties>
+		<java.source.version>1.6</java.source.version>
+		<java.target.version>1.6</java.target.version>
+		<ma-framework.version>1.0.0-SNAPSHOT</ma-framework.version>
+		<javaee.version>6.0</javaee.version>
+		<javaee-web.version>6.0</javaee-web.version>
+		<junit.version>4.3.1</junit.version>
+		<slf4j.version>1.7.5</slf4j.version>
+		<slf4j-log4j.version>1.7.5</slf4j-log4j.version>
+		<gson.version>1.4</gson.version>
+		<xstream.version>1.4.7</xstream.version>
+		<commons.configuration.version>1.6</commons.configuration.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<modules>
+		<module>../ma-framework-jar</module>
+		<module>../ma-persistence-jar</module>
+		<!-- <module>../ma-stellent-jar</module>
+		<module>../ma-faxandmail-jar</module>
+		<module>../ma-eligibility-jar</module>
+		<module>../ma-userloginservice-jar</module> --> 
+	</modules>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j-log4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-configuration</groupId>
+			<artifactId>commons-configuration</artifactId>
+			<version>${commons.configuration.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>${gson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
+			<version>${xstream.version}</version>
+		</dependency>
+	</dependencies>
+</project>
